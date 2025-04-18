@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
+import FollowBall from "@/components/FollowBall"; // 👈 Import FollowBall component
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MemoTag - AI-Powered Dementia Care Platform",
-  description: "MemoTag is an innovative AI-powered platform designed to support dementia care through advanced monitoring and personalized assistance.",
-  keywords: ["dementia care", "AI healthcare", "memory assistance", "cognitive health", "elderly care"],
+  description:
+    "MemoTag is an innovative AI-powered platform designed to support dementia care through advanced monitoring and personalized assistance.",
+  keywords: [
+    "dementia care",
+    "AI healthcare",
+    "memory assistance",
+    "cognitive health",
+    "elderly care",
+  ],
   authors: [{ name: "MemoTag Team" }],
   openGraph: {
     title: "MemoTag - AI-Powered Dementia Care Platform",
@@ -36,9 +44,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <FollowBall /> {/* 👈 Render the ball globally */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
