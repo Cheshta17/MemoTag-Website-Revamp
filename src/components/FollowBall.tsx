@@ -7,12 +7,12 @@ export default function FollowBall() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const smoothX = useSpring(mouseX, { stiffness: 150, damping: 20 });
-  const smoothY = useSpring(mouseY, { stiffness: 150, damping: 20 });
+  const smoothX = useSpring(mouseX, { stiffness: 100, damping: 20 });
+  const smoothY = useSpring(mouseY, { stiffness: 100, damping: 20 });
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      mouseX.set(e.clientX - 25); // Offset to center ball
+      mouseX.set(e.clientX - 25);
       mouseY.set(e.clientY - 25);
     };
 
@@ -29,11 +29,12 @@ export default function FollowBall() {
         width: 50,
         height: 50,
         borderRadius: '50%',
-        background: 'radial-gradient(circle at 30% 30%, #60a5fa, #1e3a8a)',
+        backgroundColor: '#6C75FF',
         zIndex: 9999,
         pointerEvents: 'none',
         x: smoothX,
         y: smoothY,
+        boxShadow: '0 0 20px #6C75FF', 
       }}
     />
   );
