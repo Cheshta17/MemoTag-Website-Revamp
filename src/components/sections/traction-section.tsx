@@ -6,22 +6,22 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function TractionSection() {
   const metrics = [
     {
-      value: "5,000+",
+      value: "7,000+",
       label: "Pre-orders",
       description: "From healthcare providers and families"
     },
     {
-      value: "3",
+      value: "5",
       label: "Clinical partnerships",
       description: "With leading memory care facilities"
     },
     {
-      value: "92%",
+      value: "96%",
       label: "Satisfaction rate",
       description: "Among beta testers and early adopters"
     },
     {
-      value: "$2.4M",
+      value: "$3.8M",
       label: "Seed funding",
       description: "From healthcare and tech investors"
     }
