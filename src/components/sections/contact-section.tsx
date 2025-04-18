@@ -175,7 +175,7 @@ export default function ContactSection() {
             className="space-y-10"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
+              <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -198,7 +198,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-muted-foreground">info@memotag.io</p>
+                    <p className="text-muted-foreground">contact@memotag.io</p>
                   </div>
                 </div>
                 
@@ -211,7 +211,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">California, US</p>
                   </div>
                 </div>
               </div>
