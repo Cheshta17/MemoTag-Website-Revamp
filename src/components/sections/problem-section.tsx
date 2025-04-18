@@ -6,22 +6,22 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function ProblemSection() {
   const stats = [
     {
-      value: "55M+",
+      value: "67M+",
       label: "People worldwide living with dementia",
       description: "Expected to rise to 139 million by 2050"
     },
     {
-      value: "70%",
+      value: "80%",
       label: "Of cases go undiagnosed in early stages",
       description: "Leading to delayed interventions and care"
     },
     {
-      value: "$1.3T",
+      value: "$1.5T",
       label: "Annual global cost of dementia care",
       description: "Placing enormous burden on healthcare systems"
     },
     {
-      value: "80%",
+      value: "70%",
       label: "Of caregivers report high stress levels",
       description: "Affecting their own health and wellbeing"
     }
